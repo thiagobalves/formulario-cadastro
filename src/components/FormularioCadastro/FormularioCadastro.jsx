@@ -18,9 +18,8 @@ function FormularioCadastro({aoEnviar, validarCPF}){
         }}>
         <TextField 
             value={nome}
-            onChange={event => {
-                let tmpNome = event.target.value;                 
-                setNome(tmpNome);
+            onChange={event => {             
+                setNome(event.target.value);
             }}
             variant="outlined"
             margin="normal"
